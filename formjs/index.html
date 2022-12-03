@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work</title>
+    <script>
+       function validation()
+       {
+        f=document.getElementById
+        if(f.value.length>50 || f.value=='')
+        {
+            f.style.border='2px solid red'
+            return false;
+        }
+        else{
+            return true;
+        }
+       }
+    </script>
+</head>
+<body style="background-color: rgb(223, 59, 59); color:white;border:2px dashed black">
+    <form action="success.html" onclick="return validation();">
+       <table width="100%" >
+        <tr>
+            <td>
+               <label for=""> First Name</label>
+            </td>
+                <td>
+                    <input type="text" name="" id=""> <label for="">(MAX 50 Characters Allowed)</label>
+                </td>
+        </tr>
+        <tr> 
+            <td>
+               <label for=""> Last Name </label>
+            </td>
+        <td>
+            <input type="text" name="" id=""> <label for="">(MAX 50 Characters Allowed)</label>
+        </td> 
+     </tr>
+        <tr>
+            <td>
+                <label for="">Email</label>
+            </td>
+            <td>
+             <input type="email" name="" id="">
+            </td>
+        </tr>
+        <tr> 
+            <td>
+              <label for=""> Mobile Number </label>
+        </td>
+        <td>
+            <input type="text" name="" id=""> <label for="">(10 Digits Allowed)</label>
+        </td>
+    </tr>
+        <tr>
+             <td>
+              <label for="">Gender</label>
+        </td>
+        <td>
+            <input type="radio" name="g" id="">Male
+            <input type="radio" name="g" id="">Female
+        </td>
+    </tr>
+        <tr>
+            <td>
+               <label for=""> Date of Birth(DOB)</label>
+            </td>
+            <td>
+                <select name="date" id=""></select>
+                <select name="month" id=""></select>
+                <select name="year" id=""></select>
+            </td>
+        </tr>
+        <tr>
+            <td> <label for=""> Address</label> </td>
+            <td>  <input type="text" name="" id="" style="height:150px ;width:350px "></td>
+        </tr>
+        <tr>
+            <td> <label for="">City</label> </td>
+            <td><input type="text" name="" id="">
+                <label for="">(MAX 50 Characters Allowed)</label></td>
+        </tr>
+        <tr> <td> <label for="">Pin Code</label> </td>
+        <td><input type="text" name="" id="">
+            <label for="">(Max 6 Numbers Allowed)</label>
+        </td></tr>
+        <tr><td> <label for="">State</label> </td>
+        <td>  <input type="text" name="" id="">
+            <label for="">(MAX 50 Characters Allowed)</label> </td>
+        </tr>
+        <tr> <td> <label for="">Country</label> </td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr><td> <label for="">Hobbies</label> </td>
+        <td>  <input type="checkbox" name="" id="">Drawing
+            <input type="checkbox" name="" id="">Singing
+            <input type="checkbox" name="" id="">Dancing
+            <input type="checkbox" name="" id="">Sketching <br>
+            <input type="checkbox" name="" id="">Others <input type="text" name="" id="" placeholder="Ex:Training">
+             <label for="">(Max 50 Characters Allowed)</label> <br> <br></td></tr>
+        <tr><td> <label for="">Qualifications</label> </td>
+            <td>
+                <input type="checkbox" name="" id="">High school(10th) <br>
+                <input type="checkbox" name="" id="">Higher school(12th) <br>
+                <input type="checkbox" name="" id="">Graduation(Bachelors) <br>
+                <input type="checkbox" name="" id="">Post Graduation(Masters) <br>
+                <input type="checkbox" name="" id="">Phd <br> <br>
+            </td>
+        </tr>
+        <tr><td> <label for="">Courses Applied</label> </td>
+        <td> <input type="radio" name="courses" id="">BCA  <br>
+            <input type="radio" name="courses" id="">B.COM <br>
+            <input type="radio" name="courses" id="">B.SC <br>
+            <input type="radio" name="courses" id="">B.A <br>
+            <input type="radio" name="courses" id="">MCA <br>
+            <input type="radio" name="courses" id="">M.COM <br>
+            <input type="radio" name="courses" id="">M.SC <br>
+            <input type="radio" name="courses" id="">MA <br>
+        </td></tr><br>
+    </table>
+    <div align="center" >
+    <input type="button" value="SUBMIT" >
+    <input type="button" value="RESET" >
+    </div>
+
+        
+     </form>
+</body>
+</html>

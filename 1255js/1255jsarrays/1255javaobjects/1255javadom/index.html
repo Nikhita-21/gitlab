@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1 id="one">welcome to it a</h1>
+    <h1 class="h">one</h1>
+    <h1 class="h">two</h1>
+    firstname<input type="text" name="two">
+    lastname<input type="text" name="three">
+    <p id="p"><br>hello world <br> welcome to new world</p>
+    <p>good morning</p>
+
+    <script>
+        console.log(document.getElementById('one'));
+        console.log(document.getElementsByClassName('h'))
+        console.log(document.getElementsByName('two'))
+        console.log(document.getElementsByTagName('h1'))
+        console.log(document.querySelector('h1'))
+        console.log(document.querySelectorAll('h1'))
+        console.log(document.getElementById('p').innerHTML)
+        console.log(document.getElementById('p').textContent)
+        let n=document.createElement('span')
+        n.innerText='span tag'
+        console.log(n)
+        document.body.appendChild(n)
+        let x=document.getElementById('p')
+        let p=x.removeChild(x.firstElementChild)
+        console.log(p)
+        console.log(x)
+    </script>
+</body>
+</html>

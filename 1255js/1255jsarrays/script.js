@@ -1,0 +1,30 @@
+const people=['greg','mary','devon','james'];
+for(i=0;i<people.length;i++)
+{
+    console.log(people[i])
+}
+delete people[0]
+console.log(people)
+people.shift()
+console.log(people)
+people.pop()
+console.log(people)
+people.unshift('matt')
+console.log(people)
+people.push('nikhita')
+console.log(people)
+for(i=0;i<people.length;i++)
+{
+    if(people[i]=='mary')
+    {
+        break;
+    }
+    console.log(people[i])
+}
+console.log(people.slice(2,people.length))
+console.log(people.indexOf('mary'))
+console.log(people.indexOf('foo'))
+people.splice(2,1,'elizabeth','artie')
+console.log(people)
+withbob=people.concat('bob')
+console.log(withbob)
